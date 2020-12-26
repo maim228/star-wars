@@ -1,0 +1,78 @@
+body{
+    margin:0;
+    padding:0;
+    background-image:url("galaxy.jpg");
+    background-repeat:none;
+    color:white;
+    font-family:Arial, Helvetica, sans-seria;
+    overflow:hidden;
+    text-align:center;
+
+}
+form{
+    margin:15% auto;
+    padding:5px;
+    width:500px;
+    border-radius:20px;
+    box-shadow:20px 20px 100px 15px #111d5e;
+}
+@media screen and (max-width:800px){
+    form{
+        margin:50% auto;
+    }
+}
+img{
+    height:250px;
+    width:450px;
+}
+label{
+    font-size:24pt;
+    font-weight:500;
+    line-height:55px;
+}
+input[type="text"],input[type="password"]{
+    display:block;
+    margin:10px auto;
+    border:2px solid white;
+    border-radius:15px;
+    height:30px;
+    width:170px;
+    outline:none;
+    text-align: center;
+    font-size:16pt;
+    color:white;
+    background:none;
+    transition:0.5s;
+}
+#submit{
+    margin:10px auto;
+    background:none;
+    color:white;
+    width:130px;
+    border:3px solid white;
+    border-radius:15px;
+    font-size:20pt;
+    transition:0.5s;
+    outline: none;
+}
+input:focus{
+    width:200px;
+    border:3px solid #0a043c; 
+    box-shadow:20px 20px 100px 15px #111d5e;
+
+}
+#submit:hover{
+    width:160px;
+    box-shadow:20px 20px 50px 15px #111d5e;
+    background-color:#1a2d94;
+}
+#submit:hover  i{
+    animation: rotate 2s infinite;
+
+}
+@keyframes rotate{
+    25%{transform:rotateZ(90deg);}
+    50%{transform:rotateZ(180deg);}
+    75%{transform:rotateZ(270deg);}
+    100%{transform:rotateZ(360deg);}
+}
